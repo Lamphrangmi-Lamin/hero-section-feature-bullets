@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
@@ -23,24 +27,54 @@
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body>
-    <div class="">
-      <header>
-        <h1>Premium abstract images</h1>
+  <body class="bg-gradient-to-br from-[#F9FAFB] to-[#D2D6DB]">
+    <div
+      class="bg-white absolute inset-4 py-[62px] px-4 grid grid-cols-4 gap-x-4 gap-y-12 auto-rows-min"
+    >
+      <!-- Left section -->
+      <header class="col-span-4 flex flex-col gap-8">
+        <h1 class="text-4xl text-neutral-900 font-semibold">
+          Premium abstract images
+        </h1>
         <!-- Feature bullets -->
-         <ul role="list" aria-label="Features list">
-          <li>Minimum 5K image resolution</li>
-          <li>Various format variants available</li>
-          <li>Retina display support</li>
-         </ul>
-         <!-- Action buttons -->
-          <button>See pricing</button>
-          <button>Learn more</button>
+        <ul
+          role="list"
+          aria-label="Features list"
+          class="text-lg text-neutral-600 flex flex-col gap-5"
+        >
+          <li class="">
+            <i
+              class="ri-checkbox-circle-fill text-2xl text-indigo-50 bg-indigo-500 rounded-full"
+            ></i>
+            Minimum 5K image resolution
+          </li>
+          <li>
+            <i
+              class="ri-checkbox-circle-fill text-2xl text-indigo-50 bg-indigo-500 rounded-full"
+            ></i>
+            Various format variants available
+          </li>
+          <li>
+            <i
+              class="ri-checkbox-circle-fill text-2xl text-indigo-50 bg-indigo-500 rounded-full"
+            ></i>
+            Retina display support
+          </li>
+        </ul>
+        <!-- Action buttons -->
+        <div class="flex gap-4">
+          <button class="bg-indigo-700 text-white text-base font-medium py-3 grow rounded shadow-sm">
+            See pricing
+          </button>
+          <button class="bg-white text-neutral-900 text-base font-medium py-3 grow rounded border-[0.5px] border-neutral-200 shadow-sm">
+            Learn more
+          </button>
+        </div>
       </header>
-      <!-- Hero image section -->
-      <section>
-        <div>
-          <img src="./img/prism.png" alt="hero image">
+      <!-- Right section -->
+      <section class="col-span-4">
+        <div class="">
+          <img src="./img/prism.png" alt="hero image" class="w-full h-full object-cover rounded-lg" />
         </div>
       </section>
     </div>
@@ -53,7 +87,7 @@
       See pricing -->
 
     <!-- Attribute this challenge to yourself! -->
-    <div class="credits">
+    <!-- <div class="credits">
       A challenge by
       <a
         href="https://www.greatfrontend.com/projects?ref=challenges"
@@ -63,7 +97,7 @@
       <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
         >Lamphrangmi</a
       >.
-    </div>
+    </div> -->
     <script src="js/index.js"></script>
   </body>
 </html>
